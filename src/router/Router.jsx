@@ -9,7 +9,7 @@ import DashboardLayout from "../Layout/DashboardLayout";
 import Dashboard from "../pages/dashboard/admin/Dashboard";
 import Users from "../pages/dashboard/admin/Users";
 import AddMenu from "../pages/dashboard/admin/AddMenu";
-import ManageItems from "../pages/dashboard/admin/manageItems";
+import ManageItems from "../pages/dashboard/admin/ManageItems";
 import UpdateMenu from "../pages/dashboard/admin/UpdateMenu";
 import Payment from "../pages/Shop/Payment";
 import Order from "../pages/dashboard/admin/Order";
