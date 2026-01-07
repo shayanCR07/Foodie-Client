@@ -10,6 +10,8 @@ const Menu = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage] = useState(8);
 
+  console.log('I am inside menu page')
+
   //loading Data
   useEffect(() => {
     //fetch Data
