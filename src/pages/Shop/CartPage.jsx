@@ -19,7 +19,7 @@ const CartPage = () => {
   //handle decrease function
   const handleDecrease = (item) => {
     if (item.quantity > 1) {
-      fetch(`http://localhost:6001/cart/${item._id}`, {
+      fetch(`https://foodie-server-brk2.onrender.com//cart/${item._id}`, {
         method: "PUT",
         headers: {
           "Content-type": "application/json; chartset=UTF-8",
@@ -50,7 +50,7 @@ const CartPage = () => {
   //handle increase function
   const handleIncrease = (item) => {
     // console.log(item._id)
-    fetch(`http://localhost:6001/cart/${item._id}`, {
+    fetch(`https://foodie-server-brk2.onrender.com//cart/${item._id}`, {
       method: "PUT",
       headers: {
         "Content-type": "application/json; chartset=UTF-8",
@@ -94,7 +94,7 @@ const CartPage = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:6001/cart/${item._id}`, {
+        fetch(`https://foodie-server-brk2.onrender.com//cart/${item._id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())

@@ -26,7 +26,7 @@ const Cards = ({ item }) => {
         email: user.email,
       };
       console.log(cartItem);
-      fetch("http://localhost:6001/cart", {
+      fetch("https://foodie-server-brk2.onrender.com//cart", {
         method: "POST",
         headers: {
           "content-type": "application/json",
