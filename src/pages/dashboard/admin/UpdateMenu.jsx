@@ -40,7 +40,7 @@ const UpdateMenu = () => {
 
     const updatedItem = { name, recipe, image, category, price };
 
-    const res = await fetch(`https://foodie-server-brk2.onrender.com//menu/${item._id}`, {
+    const res = await fetch(`https://foodie-server-brk2.onrender.com/menu/${item._id}`, {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(updatedItem),

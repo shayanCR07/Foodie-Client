@@ -10,7 +10,7 @@ const Order = () => {
   const { refetch, data: orders = [] } = useQuery({
     // queryKey: ["orders", user?.email],
     // queryFn: async () => {
-    //   const res = await fetch(`https://foodie-server-brk2.onrender.com//payments?email=${user?.email}`, {
+    //   const res = await fetch(`https://foodie-server-brk2.onrender.com/payments?email=${user?.email}`, {
     //     headers: {
     //       authorization: `Bearer ${token}`
     //     }
@@ -22,7 +22,7 @@ const Order = () => {
     enabled: !!user?.email,
     queryFn: async () => {
       const res = await fetch(
-        `https://foodie-server-brk2.onrender.com//payments?email=${user?.email}`,
+        `https://foodie-server-brk2.onrender.com/payments?email=${user?.email}`,
         {
           headers: {
             authorization: `Bearer ${token}`,

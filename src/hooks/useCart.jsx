@@ -15,7 +15,7 @@ const useCart = () => {
     enabled: !!user?.email && !loading, // 🔑 MOST IMPORTANT LINE
     queryFn: async () => {
       const res = await fetch(
-        `https://foodie-server-brk2.onrender.com//cart?email=${user.email}`,
+        `https://foodie-server-brk2.onrender.com/cart?email=${user.email}`,
         {
           headers: {
             authorization: `Bearer ${token}`,

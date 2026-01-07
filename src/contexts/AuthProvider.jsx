@@ -51,7 +51,7 @@ const AuthProvider = ({ children }) => {
 
         try {
           const { data } = await axios.post(
-            "https://foodie-server-brk2.onrender.com//jwt",
+            "https://foodie-server-brk2.onrender.com/jwt",
             { email: currentUser.email }
           );
 
